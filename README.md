@@ -13,7 +13,10 @@ genomic variants based on a gene name and display the results in a table.
 4. cd ben_kremer_clinvitae
 5. pip install -r requirements.txt
 6. python3 manage.py migrate
-7. python3 manage.py runserver
+7. Download variant_results.tsv file and place in management/data directory
+   http://clinvitae.invitae.com/download
+8. python3 manage.py loadtsvdata genomic_variants/management/data/variant_results.tsv 
+9. python3 manage.py runserver
 
 
 
