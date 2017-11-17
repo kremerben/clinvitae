@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load get from gv_extras %}
+
+{% block content %}
+    <a href="/"><< Return</a>
+<table class="text-xs-left align-middle table table-striped table-hover table-responsive">
+    <caption>Genomic Variants Detail</caption>
+    <tbody>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+        <tr>
+            <td>Gene</td>
+            <td>{{ object.gene }}</td>
+        </tr>
+        <tr>
+            <td>Nucleotide Change</td>
+            <td>{{ object.nucleotide_change }}</td>
+        </tr>
+        <tr>
+            <td>Protein Change</td>
+            <td>{{ object.protein_change }}</td>
+        </tr>
+        <tr>
+            <td>Other Mappings</td>
+            <td style="word-wrap:break-word;">{{ object.other_mappings }}</td>
+        </tr>
+        <tr>
+            <td>Alias</td>
+            <td>{{ object.alias }}</td>
+        </tr>
+        <tr>
+            <td>Transcripts</td>
+            <td>{{ object.transcripts }}</td>
+        </tr>
+        <tr>
+            <td>Region</td>
+            <td>{{ object.region }}</td>
+        </tr>
+        <tr>
+            <td>Reported Classification</td>
+            <td>{{ object.reported_classification }}</td>
+        </tr>
+        <tr>
+            <td>Inferred Classification</td>
+            <td>{{ object.inferred_classification }}</td>
+        </tr>
+        <tr>
+            <td>Source</td>
+            <td>{{ object.source }}</td>
+        </tr>
+        <tr>
+            <td>Last Evaluated</td>
+            <td>{{ object.last_evaluated|date:"F m, Y" }}</td>
+        </tr>
+        <tr>
+            <td>Last Updated</td>
+            <td>{{ object.last_updated|date:"F m, Y" }}</td>
+        </tr>
+        <tr>
+            <td>URL</td>
+            <td><a href="{{ object.url }}" target="_blank" rel="noopener noreferrer">{{ object.url }}</a></td>
+        </tr>
+        <tr>
+            <td>Submitter Comment</td>
+            <td>{{ object.submitter_comment }}</td>
+        </tr>
+        <tr>
+            <td>Assembly</td>
+            <td>{{ object.assembly }}</td>
+        </tr>
+        <tr>
+            <td>Chr</td>
+            <td>{{ object.chr }}</td>
+        </tr>
+        <tr>
+            <td>Genomic Start</td>
+            <td>{{ object.genomic_start }}</td>
+        </tr>
+        <tr>
+            <td>Genomic Stop</td>
+            <td>{{ object.genomic_stop }}</td>
+        </tr>
+        <tr>
+            <td>Ref</td>
+            <td>{{ object.ref }}</td>
+        </tr>
+        <tr>
+            <td>Alt</td>
+            <td>{{ object.alt }}</td>
+        </tr>
+        <tr>
+            <td>Accession</td>
+            <td>{{ object.accession }}</td>
+        </tr>
+        <tr>
+            <td>Reported Ref</td>
+            <td>{{ object.reported_ref }}</td>
+        </tr>
+        <tr>
+            <td>Reported Alt</td>
+            <td>{{ object.reported_alt }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
