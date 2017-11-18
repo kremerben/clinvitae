@@ -19,14 +19,9 @@ genomic variants based on a gene name and display the results in a table.
 9. python3 manage.py runserver
 
 
-
-
-
-
 ## Features
 -------------
 There are two components to the Clinvitae application, web UI access and API access (described below).
-
 
 
 ## Clinvitae API V1 WIKI
@@ -160,5 +155,3 @@ https://ben-kremer-clinvitae.herokuapp.com/api/v1/gene/suggest/?name=a
     }
 }
 ```
-
-
