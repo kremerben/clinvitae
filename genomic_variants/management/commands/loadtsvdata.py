@@ -79,6 +79,8 @@ class Command(BaseCommand):
                     )
                     if created:
                         genomic_variant_count += 1
+                print('counts', gene_count, genomic_variant_count)
+                self.stdout.write('counts: {}, {}'.format(gene_count, genomic_variant_count))
         self.stdout.write('{} Genes imported'.format(gene_count))
         self.stdout.write('{} Genomic Variants imported'.format(genomic_variant_count))
 
