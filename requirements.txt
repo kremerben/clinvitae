@@ -7,7 +7,7 @@ django-toolbelt==0.0.1
 djangorestframework>=3.9.1
 gunicorn==19.9.0
 olefile==0.46
-Pillow==6.2.0
+Pillow>=6.2.2
 psycopg2==2.7.5
 pytz==2018.5
 six==1.11.0
