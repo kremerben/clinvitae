@@ -2,7 +2,7 @@ dj-database-url==0.5.0
 dj-static==0.0.6
 django>=1.11.19
 django-autocomplete-light==3.3.0
-django-debug-toolbar==1.10.1
+django-debug-toolbar==1.11.1
 django-toolbelt==0.0.1
 djangorestframework>=3.9.1
 gunicorn==19.9.0
